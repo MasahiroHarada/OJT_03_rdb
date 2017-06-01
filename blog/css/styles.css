@@ -1,0 +1,114 @@
+html, body {
+    font-family: "Rounded Mplus 1c", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+header {
+    padding: 1rem 2%;
+    border-bottom: 1px solid #dedede;
+    font-weight: bold;
+}
+
+main {
+    max-width: 960px;
+    margin: 4rem auto 6rem;
+    display: flex;
+}
+
+footer {
+    background-color: #f1f1f1;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    max-width: 720px;
+    flex: 3;
+}
+
+aside {
+    padding-left: 3rem;
+    flex: 1;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+article img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin: 1.5rem 0;
+}
+
+p + h2 {
+    margin-top: 3rem;
+}
+
+article h1 {
+    margin-bottom: 1rem;
+}
+
+aside h3 {
+    border-bottom: 2px solid #dedede;
+    padding-bottom: 1rem;
+}
+
+.meta-info {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta-info p {
+    margin: 0;
+}
+
+.author, time {
+    font-weight: bold;
+    color: #444;
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #dedede;
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+}
+
+.tag-item {
+    margin-right: 1rem;
+    padding: .2em 1rem;
+    border-radius: 3rem;
+    background-color: #f1f1f1;
+}
+.tag-item::before {
+    content: "#";
+    display: inline-block;
+    margin-right: .2em;
+}
+
+.category-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #dedede;
+}

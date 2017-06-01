@@ -1,0 +1,171 @@
+html, body {
+    font-family: "Rounded Mplus 1c", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+header {
+    padding: 1rem 2%;
+    border-bottom: 1px solid #f1f1f1;
+    font-weight: bold;
+}
+
+main {
+    max-width: 980px;
+    margin: 4rem auto 12rem;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #f1f1f1;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    width: 70%;
+}
+
+aside {
+    width: 20%;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+li {
+    list-style: none;
+}
+
+article img {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+p + h2 {
+    margin-top: 3rem;
+}
+
+aside h3 {
+    border-bottom: 2px solid #dedede;
+    padding-bottom: 1rem;
+}
+
+.authors {
+    display: flex;
+    margin: 1rem 0 2rem 0;
+}
+
+.authors::before {
+    content: "（著者）";
+}
+
+.author::after {
+    content: ",";
+    display: inline-block;
+    margin-right: .5em;
+}
+
+.author:last-child::after {
+    content: "";
+    margin-right: 0;
+}
+
+.book {
+    display: flex;
+}
+
+.book-image{
+    flex: 2;
+}
+
+.book-info {
+    flex: 3;
+}
+
+.book-image img {
+    width: 85%;
+}
+
+.biblio li {
+    margin-bottom: .5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 1.5rem;
+}
+
+.reviews {
+    margin-top: 4rem;
+}
+
+.reviews label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+.review-title {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.review {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.stars {
+    display: flex;
+    font-size: 1.5rem;
+}
+.star {
+    margin-right: .25rem;
+}
+.star.on {
+    color: #F0BE18;
+}
+.star.off {
+    color: #cccccc;
+}
+
+.poster {
+    color: #5a5a5a;
+}
+
+.category-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.category-item a:hover {
+    color: blue;
+}
+
+.category-item a {
+    color: inherit;
+    text-decoration: none;
+}

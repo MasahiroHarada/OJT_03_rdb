@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>サンプルブログアプリケーション</header>
+<main>
+    <article>
+        <h1>セマンティック バージョニング 2.0.0</h1>
+
+        <div class="meta-info">
+            <p>by <span class="author">Tom Preston-Werner</span> on <time>2017.06.01</time></p>
+            <p>カテゴリ：プログラミング</p>
+        </div>
+
+        <img src="images/cat.jpeg">
+
+        <h2>導入</h2>
+        <p>ソフトウェア・マネージメントの世界には、『依存性地獄』と呼ばれる恐ろしいものがあります。あなたのシステムが大きく成長すればするほど、さまざまなパッケージを組み込めば組み込むほど、自分が地獄の底にいることにいつか気づくでしょう。</p>
+        <p>多くの依存性を有しているシステムにとって、新しいバージョンがリリースされることは悪夢でしかありません。厳密に依存関係を指定してしまうと、システムはバージョン・ロック（すべての依存パッケージを新しくしない限り、アップグレードできない）の危機にさらされてしまいます。反対に、依存指定を緩く管理しすぎると、バージョンが複雑に絡まり合い、痛い目にあうことは避けられないでしょう（合理性よりも将来のバージョンとの互換性を気にすることになる）。依存性地獄とは、あなたのプロジェクトでバージョン・ロックまたはバージョン混乱に陥ることで、プロジェクトに支障をきたすことを指します。</p>
+        <h2>なぜセマンティック バージョニングを使用するのか？</h2>
+        <p>このアイデアは新しいものでもなければ、革新的なものでもありません。実際、みなさんも似たような取り組みを既におこなっているかもしれません。問題は『似ている』のでは不十分だということです。正式な仕様書による取り決めがなければ、バージョンナンバーは依存性の管理において基本的には無意味です。上記のアイデアに対して名前と正確な定義を与えることよって、あなたの開発するソフトウェアにおいて、あなたの意図がユーザーに対して伝わりやすくなることでしょう。一度、これらの意図を正確にしてしまえば、柔軟な（しかし、柔軟すぎてはいけない）依存性の仕様を作ることができます。</p>
+        <p>単純な例として、セマンティック バージョニングがどのように依存性地獄を過去のものとするかについて説明します。『Firetruck』と呼ばれるライブラリについて考えてみましょう。それはセマンティック バージョニングされた『Ladder』というパッケージを必要とします。Firetruckを作成した時、Ladderはバージョン3.1.0でした。Firetruckは、バージョン3.1.0時に導入されたいくつかの機能を使用してるので、Ladderが3.1.0以上4.0.0未満の範囲で安全に依存性を指定できます。Ladderのバージョン3.1.1と3.2.0が利用可能になった時、それらをパッケージ管理に取り込んでリリースすることができ、それらが既存の依存するソフトウェアと互換性があるということは明確です。</p>
+
+        <ul class="tags">
+            <li class="tag-item">テクノロジー</li>
+            <li class="tag-item">ソフトウェア開発</li>
+            <li class="tag-item">UI/UX</li>
+        </ul>
+    </article>
+    <aside>
+        <section>
+            <h3>カテゴリ</h3>
+            <ul class="categories">
+                <li class="category-item">デザイン</li>
+                <li class="category-item">プログラミング</li>
+                <li class="category-item">マーケティング</li>
+                <li class="category-item">テクノロジー</li>
+                <li class="category-item">ライフハック</li>
+            </ul>
+        </section>
+    </aside>
+</main>
+<footer>
+    <span>&copy;サンプルブログアプリケーション</span>
+</footer>
+</body>
+</html>
